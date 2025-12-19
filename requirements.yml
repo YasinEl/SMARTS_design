@@ -1,0 +1,34 @@
+# Conda environment file for SMARTS design
+# Install with: conda env create -f requirements.yml
+# Update with: conda env update -f requirements.yml
+
+name: smarts_design
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Python version
+  - python=3.10
+  
+  # Core chemistry libraries
+  - rdkit>=2023.3.1
+  
+  # Jupyter and notebook tools
+  - jupyter
+  - jupyterlab
+  - notebook
+  - ipywidgets
+  
+  # Data manipulation and visualization
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  
+  # Additional useful packages for chemical work
+  - pillow
+  - pip
+  
+  # Pip dependencies (if any additional packages are needed)
+  - pip:
+    - rdkit-pypi  # Alternative RDKit installation via pip if conda fails
