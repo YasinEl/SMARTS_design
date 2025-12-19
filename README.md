@@ -59,9 +59,10 @@ SMARTS_design/
 
 ## Usage Example
 
+Open the Jupyter notebook `code/molecule_visualization.ipynb` and run the cells to use the visualization functions:
+
 ```python
-from rdkit import Chem
-from code.molecule_visualization import display_molecule_with_atom_numbers
+# In the Jupyter notebook:
 
 # Display a molecule with atom numbers
 display_molecule_with_atom_numbers('CCO')  # Ethanol
@@ -70,6 +71,7 @@ display_molecule_with_atom_numbers('CCO')  # Ethanol
 display_molecule_with_atom_numbers('c1ccccc1', size=(600, 600))
 
 # Highlight specific atoms
+from rdkit import Chem
 mol = Chem.MolFromSmiles('CC(=O)O')  # Acetic acid
 display_molecule_with_atom_numbers(mol, highlight_atoms=[1, 2])
 ```

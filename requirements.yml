@@ -30,5 +30,7 @@ dependencies:
   - pip
   
   # Pip dependencies (if any additional packages are needed)
-  - pip:
-    - rdkit-pypi  # Alternative RDKit installation via pip if conda fails
+  # Note: Do not install rdkit-pypi if conda rdkit installed successfully
+  # Uncomment the following only if conda rdkit installation fails:
+  # - pip:
+  #   - rdkit-pypi
